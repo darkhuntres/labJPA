@@ -1,11 +1,11 @@
-/Users/martinsanabria/Desktop/Noveno ciclo/Frameworks empresariales/periodo 2/LaboratorioJPA/Laboratorio01/src/main/java/Controllers/CategoriaJpaController.java
-/Users/martinsanabria/Desktop/Noveno ciclo/Frameworks empresariales/periodo 2/LaboratorioJPA/Laboratorio01/src/main/java/Controllers/exceptions/NonexistentEntityException.java
-/Users/martinsanabria/Desktop/Noveno ciclo/Frameworks empresariales/periodo 2/LaboratorioJPA/Laboratorio01/src/main/java/Entities/Juego.java
-/Users/martinsanabria/Desktop/Noveno ciclo/Frameworks empresariales/periodo 2/LaboratorioJPA/Laboratorio01/src/main/java/Servlets/JuegoServlet.java
-/Users/martinsanabria/Desktop/Noveno ciclo/Frameworks empresariales/periodo 2/LaboratorioJPA/Laboratorio01/src/main/java/Controllers/JuegoJpaController.java
-/Users/martinsanabria/Desktop/Noveno ciclo/Frameworks empresariales/periodo 2/LaboratorioJPA/Laboratorio01/src/main/java/Controllers/exceptions/PreexistingEntityException.java
-/Users/martinsanabria/Desktop/Noveno ciclo/Frameworks empresariales/periodo 2/LaboratorioJPA/Laboratorio01/src/main/java/Entities/Categoria.java
-/Users/martinsanabria/Desktop/Noveno ciclo/Frameworks empresariales/periodo 2/LaboratorioJPA/Laboratorio01/src/main/java/com/mycompany/laboratorio01/resources/JakartaEE8Resource.java
-/Users/martinsanabria/Desktop/Noveno ciclo/Frameworks empresariales/periodo 2/LaboratorioJPA/Laboratorio01/src/main/java/com/mycompany/laboratorio01/JakartaRestConfiguration.java
-/Users/martinsanabria/Desktop/Noveno ciclo/Frameworks empresariales/periodo 2/LaboratorioJPA/Laboratorio01/src/main/java/Controllers/exceptions/IllegalOrphanException.java
-/Users/martinsanabria/Desktop/Noveno ciclo/Frameworks empresariales/periodo 2/LaboratorioJPA/Laboratorio01/src/main/java/Servlets/CategoriaServlet.java
+C:\Users\kikii\Documents\GitHub\labJPA\Laboratorio01\src\main\java\com\mycompany\laboratorio01\JakartaRestConfiguration.java
+C:\Users\kikii\Documents\GitHub\labJPA\Laboratorio01\src\main\java\Controllers\CategoriaJpaController.java
+C:\Users\kikii\Documents\GitHub\labJPA\Laboratorio01\src\main\java\Servlets\JuegoServlet.java
+C:\Users\kikii\Documents\GitHub\labJPA\Laboratorio01\src\main\java\Controllers\JuegoJpaController.java
+C:\Users\kikii\Documents\GitHub\labJPA\Laboratorio01\src\main\java\Controllers\exceptions\PreexistingEntityException.java
+C:\Users\kikii\Documents\GitHub\labJPA\Laboratorio01\src\main\java\com\mycompany\laboratorio01\resources\JakartaEE8Resource.java
+C:\Users\kikii\Documents\GitHub\labJPA\Laboratorio01\src\main\java\Entities\Juego.java
+C:\Users\kikii\Documents\GitHub\labJPA\Laboratorio01\src\main\java\Servlets\CategoriaServlet.java
+C:\Users\kikii\Documents\GitHub\labJPA\Laboratorio01\src\main\java\Controllers\exceptions\IllegalOrphanException.java
+C:\Users\kikii\Documents\GitHub\labJPA\Laboratorio01\src\main\java\Controllers\exceptions\NonexistentEntityException.java
+C:\Users\kikii\Documents\GitHub\labJPA\Laboratorio01\src\main\java\Entities\Categoria.java
