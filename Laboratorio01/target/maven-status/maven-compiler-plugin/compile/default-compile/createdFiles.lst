@@ -1,0 +1,13 @@
+Controllers/CategoriaJpaController.class
+Entities/Juego_.class
+Entities/Categoria.class
+Controllers/exceptions/NonexistentEntityException.class
+Controllers/JuegoJpaController.class
+Servlets/CategoriaServlet.class
+Entities/Categoria_.class
+Entities/Juego.class
+Servlets/JuegoServlet.class
+Controllers/exceptions/IllegalOrphanException.class
+com/mycompany/laboratorio01/resources/JakartaEE8Resource.class
+Controllers/exceptions/PreexistingEntityException.class
+com/mycompany/laboratorio01/JakartaRestConfiguration.class
