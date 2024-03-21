@@ -1,5 +1,3 @@
-package Servlets;
-
 import Controllers.JuegoJpaController;
 import Entities.Juego;
 import net.sf.jasperreports.engine.JasperRunManager;
@@ -11,6 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Collections;
+import java.util.Comparator;
 import javax.servlet.annotation.WebServlet;
 
 @WebServlet(name = "generarReporteServlet", urlPatterns = {"/GenerarReporteServlet"})
@@ -24,6 +24,9 @@ public class generarReporteServlet extends HttpServlet {
             // Cargar datos desde la base de datos
             JuegoJpaController juegoController = new JuegoJpaController();
             List<Juego> juegos = juegoController.findJuegoEntities();
+
+            // Ordenar la lista de juegos por precio de forma descendente
+            Collections.sort(juegos, Comparator.comparing(Juego::getPrecio).reversed());
 
             // Crear una fuente de datos para JasperReports
             JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(juegos);

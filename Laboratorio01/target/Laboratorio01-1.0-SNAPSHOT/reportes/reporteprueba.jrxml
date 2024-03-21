@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0a6a2d49-a548-4008-949a-d6f43c0e3019">
-	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.zoom" value="0.5"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="48"/>
+	<property name="ireport.y" value="109"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="New Dataset 1" uuid="9893ed3d-0e42-45be-959b-322f114de8d6"/>
 	<field name="idjuego" class="java.lang.Integer"/>
 	<field name="nomJuego" class="java.lang.String"/>
 	<field name="precio" class="java.lang.Float"/>
@@ -11,68 +32,109 @@
 	<field name="clasificacion" class="java.lang.String"/>
 	<field name="idcategoria" class="java.lang.Integer"/>
 	<background>
-		<band splitType="Stretch"/>
+		<band height="802" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="555" height="802" uuid="2de251d7-d610-4856-bb93-8bece99ab666"/>
+				<imageExpression><![CDATA["C:\\Users\\kikii\\Documents\\GitHub\\labJPA\\Laboratorio01\\src\\main\\webapp\\reportes\\r.jpg"]]></imageExpression>
+			</image>
+		</band>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch"/>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="555" height="79" uuid="ead84755-6e58-49ae-8dac-7e6fdb3123d8"/>
+				<imageExpression><![CDATA["C:\\Users\\kikii\\Documents\\GitHub\\labJPA\\Laboratorio01\\src\\main\\webapp\\reportes\\t.jpg"]]></imageExpression>
+			</image>
+		</band>
 	</title>
-	<pageHeader>
-		<band height="35" splitType="Stretch"/>
-	</pageHeader>
 	<columnHeader>
-		<band height="61" splitType="Stretch">
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="45" y="0" width="460" height="20" uuid="94d245d7-d451-4b94-9966-7bacfe033d5e"/>
+			</rectangle>
 			<staticText>
-				<reportElement x="43" y="0" width="57" height="20" uuid="95f811c8-97f7-49a9-934f-85aeaf6c0b38"/>
-				<text><![CDATA[Idjuego]]></text>
+				<reportElement x="45" y="0" width="159" height="20" uuid="21b7dbb2-82bb-4606-94e7-c81e1d61d504"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre del juego]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="100" y="0" width="100" height="20" uuid="21b7dbb2-82bb-4606-94e7-c81e1d61d504"/>
-				<text><![CDATA[nomJuego]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="200" y="0" width="100" height="20" uuid="a589eaa6-0226-40eb-8014-2f39ef4040a2"/>
+				<reportElement x="205" y="0" width="101" height="20" uuid="a589eaa6-0226-40eb-8014-2f39ef4040a2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black" size="12" isBold="true"/>
+				</textElement>
 				<text><![CDATA[precio]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="300" y="0" width="100" height="20" uuid="aac147cd-ff23-4daa-9af1-8713d6b74b51"/>
+				<reportElement x="307" y="0" width="98" height="20" uuid="aac147cd-ff23-4daa-9af1-8713d6b74b51"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black" size="12" isBold="true"/>
+				</textElement>
 				<text><![CDATA[existencias]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="402" y="0" width="98" height="20" uuid="41600180-5467-4b6a-98fe-500d8c147eed"/>
+				<reportElement x="405" y="0" width="100" height="20" uuid="41600180-5467-4b6a-98fe-500d8c147eed"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black" size="12" isBold="true"/>
+				</textElement>
 				<text><![CDATA[clasificacion]]></text>
 			</staticText>
+			<line>
+				<reportElement x="204" y="0" width="1" height="20" uuid="53d2a130-d1dc-4ae8-becc-cb3f90f6c5a4"/>
+			</line>
+			<line>
+				<reportElement x="306" y="0" width="1" height="20" uuid="db90a8db-84d4-4bbf-8025-53da3c81f97d"/>
+			</line>
+			<line>
+				<reportElement x="404" y="0" width="1" height="20" uuid="8850c217-1fac-453b-b50d-4552d1b3a183"/>
+			</line>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="125" splitType="Stretch">
+		<band height="35" splitType="Stretch">
+			<rectangle>
+				<reportElement x="45" y="0" width="460" height="35" uuid="e08ce0a6-c0a8-47ed-b513-45db5961427c"/>
+			</rectangle>
 			<textField>
-				<reportElement x="43" y="0" width="57" height="20" uuid="ef8c8050-6ef2-4798-a4b7-80c58c182304"/>
-				<textFieldExpression><![CDATA[$F{idjuego}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="100" y="0" width="100" height="20" uuid="7fbc3bbe-da12-4866-8c20-90e2bb3096c3"/>
+				<reportElement x="56" y="0" width="148" height="20" uuid="7fbc3bbe-da12-4866-8c20-90e2bb3096c3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{nomJuego}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="200" y="0" width="100" height="20" uuid="d0ceec9b-1955-450e-a081-30f995353c27"/>
+				<reportElement x="205" y="0" width="101" height="20" uuid="d0ceec9b-1955-450e-a081-30f995353c27"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{precio}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="300" y="0" width="100" height="20" uuid="580b591b-ac54-4c65-ba19-8edc70c9ad4a"/>
+				<reportElement x="307" y="0" width="97" height="20" uuid="580b591b-ac54-4c65-ba19-8edc70c9ad4a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{existencias}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="402" y="0" width="98" height="20" uuid="f9d0dcc3-20d2-4fae-ac22-0d6f087c312f"/>
+				<reportElement x="405" y="0" width="100" height="20" uuid="f9d0dcc3-20d2-4fae-ac22-0d6f087c312f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$F{clasificacion}]]></textFieldExpression>
 			</textField>
+			<line>
+				<reportElement x="204" y="0" width="1" height="35" uuid="fed588f0-8646-4f10-8a99-0a3da627142b"/>
+			</line>
+			<line>
+				<reportElement x="306" y="0" width="1" height="35" uuid="6c77b4ee-2e61-4b8c-a296-b3d370e1e335"/>
+			</line>
+			<line>
+				<reportElement x="404" y="0" width="1" height="35" uuid="770dabb2-9c9e-4b77-b698-decdfca4038d"/>
+			</line>
 		</band>
 	</detail>
-	<columnFooter>
-		<band height="45" splitType="Stretch"/>
-	</columnFooter>
-	<pageFooter>
-		<band height="54" splitType="Stretch"/>
-	</pageFooter>
 	<summary>
 		<band height="42" splitType="Stretch"/>
 	</summary>
