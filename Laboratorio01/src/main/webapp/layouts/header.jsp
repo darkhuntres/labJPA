@@ -29,6 +29,9 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/Laboratorio01/JuegoServlet">Juegos</a>
               </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/Laboratorio01/GenerarReporteServlet" target="_blank">Reportes</a>
+              </li>
             </ul>
              
           </div>

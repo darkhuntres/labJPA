@@ -78,9 +78,16 @@
         <dependency>
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
-            <version>4.5.0</version>
+            <version>6.17.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy</artifactId>
+            <version>3.0.9</version>
+        </dependency>
+        
+        
     </dependencies>
     
     <build>
