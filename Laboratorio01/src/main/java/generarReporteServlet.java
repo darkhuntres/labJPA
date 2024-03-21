@@ -31,7 +31,7 @@ public class generarReporteServlet extends HttpServlet {
             parametros.put("titulo", "Reporte de Juegos");
 
             // Ruta al archivo compilado .jasper
-            String reportPath = getServletContext().getRealPath("../reportes/reporteprueba.jasper");
+            String reportPath = getServletContext().getRealPath("/reportes/reporteprueba.jasper");
 
             // Generar el reporte en PDF
             byte[] bytes = JasperRunManager.runReportToPdf(reportPath, parametros, dataSource);
